@@ -1,7 +1,10 @@
 {
 	"name": "portfolio-vue",
 	"type": "module",
-	"private": true,
+  "private": true,
+  "volta": {
+    "node": "24"
+  },
 	"scripts": {
 		"build": "nuxt build",
 		"dev": "nuxt dev",
