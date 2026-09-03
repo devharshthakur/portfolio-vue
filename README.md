@@ -1,75 +1,17 @@
-# Nuxt Minimal Starter
+<p align="center">
+  <img src="public/images/dev-pfp.webp" alt="Profile Picture" width="180" height="180"/>
+</p>
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# About
 
-## Setup
+Personal developer portfolio.
 
-Make sure to install dependencies:
+## Techstack
 
-```bash
-# npm
-npm install
+**Core** — Nuxt 4, Vue 3, TypeScript, pnpm  
+**Styling/UI** — Tailwind CSS v4, shadcn-vue (reka-ui), Lucide + Iconify, tw-animate-css, @nuxtjs/color-mode, Geist Mono  
+**Tooling** — ESLint, Prettier, Husky, lint-staged
 
-# pnpm
-pnpm install
+## License
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+This project is under **MIT** License you can find it [here](#license).
