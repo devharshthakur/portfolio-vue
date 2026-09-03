@@ -1,7 +1,7 @@
 <script setup lang="ts">
 	const error = useError();
 
-	const statusCode = computed(() => error.value?.statusCode ?? 500);
+	const statusCode = computed(() => error.value?.status ?? 500);
 	const isNotFound = computed(() => statusCode.value === 404);
 
 	useHead({
