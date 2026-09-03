@@ -1,17 +1,17 @@
 {
 	"name": "portfolio-vue",
 	"type": "module",
-  "private": true,
-  "volta": {
-    "node": "24"
-  },
+	"private": true,
+	"volta": {
+		"node": "24"
+	},
 	"scripts": {
 		"build": "nuxt build",
 		"dev": "nuxt dev",
 		"generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "docker:start": "docker compose up -d",
-    "docker:stop": "docker compose down",
+		"preview": "nuxt preview",
+		"docker:start": "docker compose up -d",
+		"docker:stop": "docker compose down",
 		"lint": "eslint .",
 		"lint:fix": "eslint . --fix",
 		"format": "prettier --ignore-unknown --list-different --write .",
