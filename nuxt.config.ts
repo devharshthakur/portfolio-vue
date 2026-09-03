@@ -7,7 +7,7 @@ export default defineNuxtConfig({
 		classSuffix: '',
 	},
 	devtools: { enabled: true },
-	css: ['~/assets/css/tailwind.css'],
+	css: ['@fontsource-variable/geist-mono', '~/assets/css/tailwind.css'],
 	srcDir: 'app/',
 	compatibilityDate: '2025-07-15',
 	vite: {
