@@ -1,4 +1,13 @@
+saveExact: true
+engineStrict: true
+autoInstallPeers: true
+strictPeerDependencies: true
+
 allowBuilds:
   esbuild: true
   unrs-resolver: true
   vue-demi: true
+
+update:
+  ignoreDeps:
+    - typescript
