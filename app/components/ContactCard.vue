@@ -1,5 +1,6 @@
 <script setup lang="ts">
 	import { ArrowUpRight } from '@lucide/vue';
+	import { Button } from '@/components/ui/button';
 
 	export interface ContactMethod {
 		label: string;
@@ -17,28 +18,29 @@
 </script>
 
 <template>
-	<a
-		:href="method.href"
-		:target="method.external ? '_blank' : undefined"
-		:rel="method.external ? 'noopener noreferrer' : undefined"
-		class="group flex min-h-36 flex-col justify-between rounded-xl border bg-card p-5 text-left shadow-sm transition-[background-color,border-color,box-shadow,transform] duration-200 outline-none hover:-translate-y-0.5 hover:border-foreground/20 hover:bg-muted/50 hover:shadow-md focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+	<Button
+		as-child
+		variant="outline"
+		class="group h-auto w-full justify-between gap-4 px-4 py-4 text-left whitespace-normal shadow-none sm:px-5"
 	>
-		<span class="flex items-center justify-between gap-4">
-			<span class="text-xs font-medium tracking-[0.18em] text-muted-foreground uppercase">{{
-				method.label
-			}}</span>
+		<a
+			:href="method.href"
+			:target="method.external ? '_blank' : undefined"
+			:rel="method.external ? 'noopener noreferrer' : undefined"
+		>
+			<span class="flex min-w-0 flex-1 flex-col gap-1 sm:flex-row sm:items-center sm:gap-6">
+				<span class="shrink-0 sm:w-20">{{ method.label }}</span>
+				<span
+					class="min-w-0 text-xs font-normal text-muted-foreground sm:text-sm"
+					:class="method.truncate ? 'truncate' : 'break-all'"
+				>
+					{{ method.display }}
+				</span>
+			</span>
 			<ArrowUpRight
-				class="size-4 shrink-0 text-muted-foreground transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+				class="size-4 text-muted-foreground group-hover:text-foreground"
 				aria-hidden="true"
 			/>
-		</span>
-		<span class="inline-flex items-center gap-1.5">
-			<span
-				class="text-base font-medium tracking-tight transition-colors group-hover:text-muted-foreground"
-				:class="method.truncate ? 'truncate' : ''"
-			>
-				{{ method.display }}
-			</span>
-		</span>
-	</a>
+		</a>
+	</Button>
 </template>
