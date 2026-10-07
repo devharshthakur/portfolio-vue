@@ -7,6 +7,9 @@ export default defineNuxtConfig({
 		classSuffix: '',
 	},
 	devtools: { enabled: true },
+	devServer: {
+		port: 5173,
+	},
 	css: ['@fontsource-variable/geist-mono', '~/assets/css/tailwind.css'],
 	srcDir: 'app/',
 	compatibilityDate: '2025-07-15',

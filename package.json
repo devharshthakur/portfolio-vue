@@ -9,7 +9,7 @@
 		"build": "nuxt build",
 		"dev": "nuxt dev",
 		"generate": "nuxt generate",
-		"preview": "nuxt preview",
+		"preview": "nuxt preview --port 4173",
 		"docker:start": "docker compose up -d",
 		"docker:stop": "docker compose down",
 		"lint": "eslint .",
