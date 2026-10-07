@@ -34,7 +34,7 @@
 			<section class="flex flex-col items-center gap-8 md:flex-row md:gap-12">
 				<div class="shrink-0 rounded-full border-2 border-border p-1.5">
 					<img
-						src="/images/dev-pfp.webp"
+						src="/images/pfp.webp"
 						alt="Harsh Thakur"
 						class="h-36 w-36 rounded-full object-cover md:h-50 md:w-50"
 					/>

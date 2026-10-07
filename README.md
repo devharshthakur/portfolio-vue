@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/images/dev-pfp.webp" alt="Profile Picture" width="180" height="180"/>
+  <img src="public/images/pfp.webp" alt="Profile Picture" width="180" height="180"/>
 </p>
 
 # About
