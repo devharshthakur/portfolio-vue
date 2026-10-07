@@ -1,3 +1,9 @@
 {
-	"material-icon-theme.activeIconPack": "vue_vuex"
+	"material-icon-theme.activeIconPack": "vue_vuex",
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/*.code-search": true,
+		"**/*.git": true
+	}
 }
