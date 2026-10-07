@@ -1,6 +1,6 @@
 <script setup lang="ts">
 	import { Icon } from '@iconify/vue';
-	import { FileText, FolderKanban, Mail } from '@lucide/vue';
+	import { FolderKanban, Mail } from '@lucide/vue';
 	import { Button } from '@/components/ui/button';
 
 	useSeoMeta({
@@ -37,7 +37,7 @@
 						src="/images/dev-pfp.webp"
 						alt="Harsh Thakur"
 						class="h-36 w-36 rounded-full object-cover md:h-50 md:w-50"
-					>
+					/>
 				</div>
 				<div class="max-w-prose text-center md:text-left">
 					<h1 class="mb-4 text-4xl font-semibold tracking-tighter md:text-5xl">Harsh Thakur</h1>
@@ -65,9 +65,7 @@
 				<Button as-child variant="outline">
 					<NuxtLink to="/contact"> <Mail class="h-4 w-4" />Contact </NuxtLink>
 				</Button>
-				<Button as-child variant="outline">
-					<NuxtLink to="/cv"> <FileText class="h-4 w-4" />CV </NuxtLink>
-				</Button>
+				<CvPopover />
 			</nav>
 		</div>
 	</div>
