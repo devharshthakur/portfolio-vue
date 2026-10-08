@@ -4,6 +4,7 @@
 		"**/node_modules": true,
 		"**/bower_components": true,
 		"**/*.code-search": true,
-		"**/*.git": true
+		"**/*.git": true,
+		"**/app/components/ui": true
 	}
 }
