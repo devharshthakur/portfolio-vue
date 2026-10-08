@@ -33,11 +33,12 @@
 		<div id="about-section" class="flex min-h-screen flex-col items-center justify-center p-5">
 			<section class="flex flex-col items-center gap-8 md:flex-row md:gap-12">
 				<div class="shrink-0 rounded-full border-2 border-border p-1.5">
+					<!-- prettier-ignore -->
 					<img
 						src="/images/pfp.webp"
 						alt="Harsh Thakur"
 						class="h-36 w-36 rounded-full object-cover md:h-50 md:w-50"
-					/>
+					>
 				</div>
 				<div class="max-w-prose text-center md:text-left">
 					<h1 class="mb-4 text-4xl font-semibold tracking-tighter md:text-5xl">Harsh Thakur</h1>
